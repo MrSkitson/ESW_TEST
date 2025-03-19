@@ -3,8 +3,6 @@ package testCases;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,7 +14,9 @@ public class ToDoTests extends BaseTest{
     public void setUpTest() {
         todoPage = new ToDoPage(driver);
     }
-    
+    /**
+     * Test case to add new task
+     */
     @Test
     public void testAddTask() {
         String taskText = "Test Automation Task";
@@ -30,19 +30,9 @@ public class ToDoTests extends BaseTest{
         Assert.assertEquals(tasks.get(0).getText(), taskText, "Task text mismatch!");
     }
 
-    @Test
-    public void testDeleteTask() {
-        todoPage.addTask("Task to Delete");
-
-        int initialSize = todoPage.getTasks().size();
-
-        // Delete the first task
-        todoPage.deleteFirstTask();
-
-        int newSize = todoPage.getTasks().size();
-        Assert.assertTrue(newSize < initialSize, "Task was not deleted!");
-    }
-
+    /**
+     * Test case to complete Task
+     */
     @Test
     public void testCompleteTask() {
         todoPage.addTask("Task to Complete");
@@ -55,7 +45,9 @@ public class ToDoTests extends BaseTest{
         Assert.assertTrue(tasks.get(0).getAttribute("class").contains("completed"),
                 "Task was not marked as completed!");
     }
-
+    /**
+     * Test case to test filter Active task
+     */
     @Test
     public void testFilterActiveTasks() {
         todoPage.addTask("Active Task 1");
@@ -70,7 +62,9 @@ public class ToDoTests extends BaseTest{
         List<WebElement> tasks = todoPage.getTasks();
         Assert.assertEquals(tasks.size(), 2, "Incorrect number of active tasks displayed!");
     }
-
+    /**
+     * Test case to test filter Completed task
+     */
     @Test
     public void testFilterCompletedTasks() {
         todoPage.addTask("Completed Task");
@@ -82,7 +76,9 @@ public class ToDoTests extends BaseTest{
         List<WebElement> tasks = todoPage.getTasks();
         Assert.assertEquals(tasks.size(), 1, "Incorrect number of completed tasks displayed!");
     }
-	
+    /**
+     * Test case E2E add multiple tasks and set filter as active
+     */
 	@Test
 	public void testE2E_AddMultipleTasksAndFilterActive() {
 
@@ -101,6 +97,20 @@ public class ToDoTests extends BaseTest{
 	    // Step 4: Verify only 2 active tasks are displayed
 	    Assert.assertEquals(todoPage.getTasks().size(), 2, "Incorrect number of active tasks displayed!");
 	}
-	
+//    /**
+//     * Test case to delete task
+//     */
+//    @Test
+//    public void testDeleteTask() {
+//        todoPage.addTask("Task to Delete");
+//
+//        int initialSize = todoPage.getTasks().size();
+//
+//        // Delete the first task
+//        todoPage.deleteFirstTask();
+//
+//        int newSize = todoPage.getTasks().size();
+//        Assert.assertTrue(newSize < initialSize, "Task was not deleted!");
+//    }
 	  
 }

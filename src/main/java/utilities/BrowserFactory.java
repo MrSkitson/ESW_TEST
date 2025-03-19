@@ -27,7 +27,7 @@ public class BrowserFactory {
                 default:
                     throw new IllegalArgumentException("Invalid browser name: " + browserName);
             }
-            driver.manage().window().maximize();  // Maximize window for better visibility
+            driver.manage().window().maximize();  
         }
         return driver;
     }
