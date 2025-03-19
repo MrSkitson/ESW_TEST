@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TodoMVC Test Suite" parallel="false">
+    <test name="TodoMVC Tests">
+        <classes>
+            <class name="testCases.ToDoTests"/>
+        </classes>
+    </test>
+</suite>

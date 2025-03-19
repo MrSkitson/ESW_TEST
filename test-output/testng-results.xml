@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-19T12:18:45 GMT" name="TodoMVC Test Suite" finished-at="2025-03-19T12:19:01 GMT" duration-ms="15259">
+    <groups>
+    </groups>
+    <test started-at="2025-03-19T12:18:45 GMT" name="TodoMVC Tests" finished-at="2025-03-19T12:19:01 GMT" duration-ms="15259">
+      <class name="testCases.ToDoTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:45 GMT" name="setUp" finished-at="2025-03-19T12:18:48 GMT" duration-ms="2657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:48 GMT" name="setUpTest" finished-at="2025-03-19T12:18:48 GMT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testAddTask()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:48 GMT" name="testAddTask" finished-at="2025-03-19T12:18:48 GMT" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTask -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:48 GMT" name="tearDown" finished-at="2025-03-19T12:18:49 GMT" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:49 GMT" name="setUp" finished-at="2025-03-19T12:18:50 GMT" duration-ms="1352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:50 GMT" name="setUpTest" finished-at="2025-03-19T12:18:50 GMT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testCompleteTask()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:50 GMT" name="testCompleteTask" finished-at="2025-03-19T12:18:51 GMT" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteTask -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:51 GMT" name="tearDown" finished-at="2025-03-19T12:18:51 GMT" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:51 GMT" name="setUp" finished-at="2025-03-19T12:18:52 GMT" duration-ms="1476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:52 GMT" name="setUpTest" finished-at="2025-03-19T12:18:52 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testDeleteTask()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:52 GMT" name="testDeleteTask" finished-at="2025-03-19T12:18:53 GMT" duration-ms="215" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6368ae574f82482a52c6572000fc9bd8, clickElement {id=f.B2F7EAA55B8322CC157901BB9784310F.d.0697B8F945B0B9BEC55ED08B1CB0B479.e.13}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\sheme\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51704}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51704/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (6368ae574f82482a52c6572000fc9bd8)] -> xpath: //ul[@class='todo-list']/li]] -> xpath: //button[@class='destroy']]
+Session ID: 6368ae574f82482a52c6572000fc9bd8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6368ae574f82482a52c6572000fc9bd8, clickElement {id=f.B2F7EAA55B8322CC157901BB9784310F.d.0697B8F945B0B9BEC55ED08B1CB0B479.e.13}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\sheme\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51704}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51704/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (6368ae574f82482a52c6572000fc9bd8)] -> xpath: //ul[@class='todo-list']/li]] -> xpath: //button[@class='destroy']]
+Session ID: 6368ae574f82482a52c6572000fc9bd8
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pageClasses.ToDoPage.deleteFirstTask(ToDoPage.java:44)
+at testCases.ToDoTests.testDeleteTask(ToDoTests.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTask -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:53 GMT" name="tearDown" finished-at="2025-03-19T12:18:53 GMT" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:53 GMT" name="setUp" finished-at="2025-03-19T12:18:55 GMT" duration-ms="1545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:55 GMT" name="setUpTest" finished-at="2025-03-19T12:18:55 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testE2E_AddMultipleTasksAndFilterActive()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:55 GMT" name="testE2E_AddMultipleTasksAndFilterActive" finished-at="2025-03-19T12:18:55 GMT" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testE2E_AddMultipleTasksAndFilterActive -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:55 GMT" name="tearDown" finished-at="2025-03-19T12:18:56 GMT" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:56 GMT" name="setUp" finished-at="2025-03-19T12:18:57 GMT" duration-ms="1432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:57 GMT" name="setUpTest" finished-at="2025-03-19T12:18:57 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testFilterActiveTasks()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:57 GMT" name="testFilterActiveTasks" finished-at="2025-03-19T12:18:58 GMT" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterActiveTasks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:58 GMT" name="tearDown" finished-at="2025-03-19T12:18:58 GMT" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:18:58 GMT" name="setUp" finished-at="2025-03-19T12:19:00 GMT" duration-ms="1725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:19:00 GMT" name="setUpTest" finished-at="2025-03-19T12:19:00 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testFilterCompletedTasks()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:19:00 GMT" name="testFilterCompletedTasks" finished-at="2025-03-19T12:19:00 GMT" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterCompletedTasks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ToDoTests@524d6d96]" started-at="2025-03-19T12:19:00 GMT" name="tearDown" finished-at="2025-03-19T12:19:01 GMT" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.ToDoTests -->
+    </test> <!-- TodoMVC Tests -->
+  </suite> <!-- TodoMVC Test Suite -->
+</testng-results>
